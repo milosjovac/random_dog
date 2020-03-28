@@ -1,0 +1,29 @@
+{
+  "key": "my-app",
+  "name": "Random dog",
+  "description": "Random dog image macro",
+  "baseUrl": "{{localBaseUrl}}",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed"
+  },
+  "scopes": [
+    "READ"
+  ],
+  "modules": {
+    "dynamicContentMacros": [
+      {
+        "url": "/dog",
+        "description": {
+          "value": "Pictures of dogs"
+        },
+        "name": {
+          "value": "Dog picture"
+        },
+        "key": "pictures-of-dogs"
+      }
+    ]
+  }
+}
